@@ -1,0 +1,80 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #fc5103;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+table {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+table  thead tr th {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 0;
+}
+table  tbody tr:first-of-type td {
+    color: #777;
+    font-size: 15px;
+}
+table  tbody tr:first-of-type td span {
+    color: var(--main-color);
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+}
+table  tbody tr:first-of-type td span::before {
+    content: '$';
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    color: #666;
+}
+table  tbody tr:first-of-type td span::after {
+    content: '99';
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    color: #666;
+    font-size: 15px;
+}
+table  tbody tr td {
+    font-weight: 600;
+    color: #777;
+    padding: 20px 0;
+}
+table  tbody tr td:first-of-type {
+    color: rgba(119, 119, 119, 0.664);
+}
+table  tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+table  tbody tr:nth-child(odd),
+table tfoot tr {
+    background-color: #fafafa;
+}
+table  tfoot tr td {
+    padding: 20px 0;
+}
+table  tfoot tr td button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    font-weight: 600;
+}
+table  tfoot tr td:nth-child(4) button{
+    background-color: var(--main-color);
+}
